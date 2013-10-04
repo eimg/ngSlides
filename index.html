@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="ngSlides">
+<head>
+	<meta charset="utf-8">
+	<title>Angular Slides</title>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/ngSlides.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div ng-controller="SlideController">
+		<div class="slide {{slide.state}}"
+				ng-repeat="slide in slides" id="slide-{{$index}}">
+			
+			<a class="remove" href="#" ng-click="removeSlide(slide)">&times;</a>
+
+			<h2>{{slide.title}}</h2>
+			<p>{{slide.body}}</p>
+
+			<h3>#Slide-{{$index}}</h3>
+			
+		</div>
+		
+		<div class="navigation">
+			<previous></previous>
+			<next></next>
+		</div>
+
+		<form ng-submit="addSlide()">
+			<input type="text" ng-model="slideTitle" placeholder="Slide Title">
+			<textarea ng-model="slideBody" placeholder="Slide body"></textarea>
+			<input class="btn-primary" type="submit" value="Add">
+		</form>
+
+	</div>
+</body>
+</html>

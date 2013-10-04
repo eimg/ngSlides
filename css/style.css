@@ -1,0 +1,124 @@
+body {
+	font: 18px/1.5em arial;
+	background: #ECF0F1;
+	color: #2C3E50;
+}
+
+h2 {
+	margin: 40px 0 20px 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+h3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	display: inline-block;
+	background: #BDC3C7;
+	margin: 0;
+	padding: 5px 20px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.remove {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 30px;
+	background: #E74C3C;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 0.2;
+}
+
+.remove:hover {
+	opacity: 1;
+}
+
+.slide {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	background: #fff;
+	border: 1px solid #BDC3C7;
+	border-radius: 3px;
+	margin: 20px auto;
+	padding: 30px 40px 40px 40px;
+	box-shadow: 0 0 20px #DDD;
+}
+
+.navigation {
+	width: 500px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.navigation a {
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background: #9B59B6;
+	padding: 5px 30px;
+	border-radius: 0 30px 30px 0;
+}
+
+.navigation a.previous {
+	border-radius: 30px 0 0 30px;
+}
+
+.navigation a:hover {
+	opacity: 0.8;
+}
+
+.hide {
+	display: none;
+}
+
+form {
+	display: block;
+	width: 400px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+input[type=text], textarea {
+	display: block;
+	width: 100%;
+	border: 1px solid #BDC3C7;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: arial;
+	padding: 8px;
+	background: #fff;
+	text-align: left;
+	opacity: 0.3;
+}
+
+input[type=text]:focus, textarea:focus {
+	opacity: 1;
+}
+
+input[type=submit] {
+	background: #1ABC9C;
+	border: 0 none;
+	color: #fff;
+	padding: 8px 40px;
+	margin-top: 5px;
+	border-radius: 5px;
+	opacity: 0.3;
+}
+
+input[type=submit]:hover {
+	opacity: 1;
+}
